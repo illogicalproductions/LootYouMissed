@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>0698f5f6-af87-4e56-99c6-2e09d131347a</Guid>
+    <Name>Loot You Missed</Name>
+    <Description>Loot You Missed as it expired</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>LootYouMissed</AssemblyName>
+    <RootNamespace>LootYouMissed</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\LootYouMissed\" />
+    <Folder Include="Src\LootYouMissed\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XcomLYMconfig.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\LootYouMissed\Classes\XComGameState_LootDrop_Override.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
